@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  box-sizing: border-box;
+  cursor: url('../public/img/pepino-cursor.png'),auto;
+}

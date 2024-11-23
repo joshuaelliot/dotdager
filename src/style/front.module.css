@@ -1,0 +1,119 @@
+.frontContainer {
+    width: 100%;
+    height: 78vh;
+    padding: 10px;
+  background-color: rgb(29, 28, 28);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+     /* Espaciado adicional para mejor presentación */
+}
+
+.frontContainer > .frontTextContainer {
+    width: auto;
+    max-width: 600px; /* Limita el ancho del contenedor de texto */
+    height: auto;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center; /* Centra el texto para pantallas pequeñas */
+}
+
+.frontTextContainer > .frontTitleContainer {
+    width: auto;
+    background-color: transparent;
+}
+
+.frontTitleContainer > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin:0;
+    color: white;
+}
+
+.frontTitleContainer > h1 > .name {
+    margin: 0;
+    font-family: "Rock Salt", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(20, 157, 220);
+}
+
+.frontTextContainer > .frontTextDescriptionContainer {
+    background-color: transparent;
+    font-size: 1.2rem;
+    margin:0;
+}
+.frontTextDescriptionContainer > p{
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: start;
+}
+.frontTextContainer > .frontBtnsContainer {
+
+    background-color:orchid;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.frontBtnsContainer > button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(20, 157, 220);
+    border: none;
+}
+
+.frontContainer > .frontImageContainer {
+    width: 40%;
+    height: auto;
+    padding: 0px;
+    
+    overflow: hidden;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.frontImageContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 425px) {
+    .frontContainer {
+        
+        flex-direction: column-reverse;
+        height: auto; 
+        /* Permite que el contenedor se expanda */
+    }
+    
+    .frontContainer > .frontImageContainer {
+        width: 50%;
+        margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    }
+
+    .frontTextContainer {
+        width: 100%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .frontTitleContainer > h1 {
+        font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    .frontTitleContainer > h1 > .name{
+        font-size: 1.2rem;
+    }
+    .frontBtnsContainer > button {
+        font-size: 0.9rem; /* Ajusta el tamaño de los botones */
+    }
+}

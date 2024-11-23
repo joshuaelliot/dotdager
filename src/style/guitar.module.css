@@ -1,0 +1,120 @@
+.aboutGuitarContainer {
+    width: 100%;
+    height: auto; /* Ajuste automático de la altura */
+    background-color:white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+.aboutGuitarContainer > .cardGuitarContainer {
+    width: 80%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.cardGuitarContainer > .imgsContainer{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: transparent;
+}
+.imgLarge, .imgMedium, .imgSmall {
+    transition: opacity 1s ease-in-out;
+}
+
+.imgsContainer > .imgLarge{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+.imgsContainer > .imgMedium{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+.imgsContainer > .imgSmall{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 3;
+    filter: grayscale(100%);
+}
+
+.cardGuitarContainer > picture {
+    width: 40%;
+    height: auto; /* Ajuste automático */
+}
+
+picture > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardGuitarContainer > .textGuitarContainer {
+    width: 55%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 0.5rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textGuitarContainer > p {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    background-color: rgb(252, 252, 247);
+    border:solid 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw; /* Usa vw para un tamaño responsivo */
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 425px) {
+    .cardGuitarContainer {
+        flex-direction: column; /* Apila la imagen y el texto */
+        align-items: center;
+    }
+
+    .cardGuitarContainer > picture {
+        width: 100%; /* Imagen toma todo el ancho en pantallas pequeñas */
+        height: auto;
+    }
+
+    .cardGuitarContainer > .textGuitarContainer {
+        width: 100%; /* Texto toma todo el ancho */
+        padding: 1rem;
+    }
+
+    .textGuitarContainer > p {
+        font-size: 4vw; /* Texto más grande en pantallas pequeñas */
+    }
+}
+
+

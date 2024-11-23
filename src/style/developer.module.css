@@ -1,0 +1,244 @@
+.aboutCatsContainer {
+    width: 100%;
+    height: auto; /* Ajuste automático de la altura */
+    background-color: white;
+    
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+.aboutCatsContainer > .cardCatContainer {
+    width: 80%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.cardCatContainer > .imgsContainer{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: transparent;
+}
+.imgsContainer > .imgLarge{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    object-fit: cover;
+}
+.imgsContainer > .imgMedium{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+.imgsContainer > .imgSmall{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 3;
+    filter: grayscale(100%);
+}
+.cardCatContainer > picture {
+    width: 40%;
+    height: auto; /* Ajuste automático */
+}
+
+picture > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardCatContainer > .textCatContainer {
+    width: 55%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 0.5rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCatContainer > p {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    background-color: rgb(252, 252, 247);
+    border: solid 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw; /* Usa vw para un tamaño responsivo */
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 425px) {
+    .cardCatContainer {
+        flex-direction: column; /* Apila la imagen y el texto */
+        align-items: center;
+    }
+
+    .cardCatContainer > picture {
+        width: 100%; /* Imagen toma todo el ancho en pantallas pequeñas */
+        height: auto;
+    }
+
+    .cardCatContainer > .textCatContainer {
+        width: 100%; /* Texto toma todo el ancho */
+        padding: 1rem;
+    }
+
+    .textCatContainer > p {
+        font-size: 4vw; /* Texto más grande en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .textCatContainer > p {
+        font-size: 5vw; /* Aumenta el tamaño del texto aún más en pantallas pequeñas */
+    }
+}
+.aboutDeveloperContainer {
+    width: 100%;
+    height: auto; /* Ajuste automático de la altura */
+    background-color: white;
+    
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+.aboutDeveloperContainer > .cardDeveloperContainer {
+    width: 80%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.cardDeveloperContainer > .imgsContainer{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: transparent;
+}
+.imgsContainer > .imgLarge{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    object-fit: cover;
+}
+.imgsContainer > .imgMedium{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+.imgsContainer > .imgSmall{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 3;
+    filter: grayscale(100%);
+}
+.cardCatContainer > picture {
+    width: 40%;
+    height: auto; /* Ajuste automático */
+}
+
+picture > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardDeveloperContainer > .textDeveloperContainer {
+    width: 55%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 0.5rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDeveloperContainer > p {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    background-color: rgb(252, 252, 247);
+    border: solid 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw; /* Usa vw para un tamaño responsivo */
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 425px) {
+    .cardDeveloperContainer {
+        flex-direction: column; /* Apila la imagen y el texto */
+        align-items: center;
+    }
+
+    .cardDeveloperContainer > picture {
+        width: 100%; /* Imagen toma todo el ancho en pantallas pequeñas */
+        height: auto;
+    }
+
+    .cardDeveloperContainer > .textDeveloperContainer {
+        width: 100%; /* Texto toma todo el ancho */
+        padding: 1rem;
+    }
+
+    .textDeveloperContainer > p {
+        font-size: 4vw; /* Texto más grande en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .textDeveloperContainer > p {
+        font-size: 5vw; /* Aumenta el tamaño del texto aún más en pantallas pequeñas */
+    }
+}

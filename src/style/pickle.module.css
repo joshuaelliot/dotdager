@@ -1,0 +1,88 @@
+.aboutPickleContainer {
+    width: 100%;
+    height: auto; /* Ajuste automático de la altura */
+    background-color: white;
+    
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+.aboutPickleContainer > .cardPickleContainer {
+    width: 80%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.cardPickleContainer > picture {
+    width: 40%;
+    height: auto; /* Ajuste automático */
+}
+
+picture > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardPickleContainer > .textPickleContainer {
+    width: 55%;
+    height: auto; /* Dejar que el contenido ajuste la altura */
+    padding: 0.5rem;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textPickleContainer > p {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    background-color: white;
+    border: solid 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8vw; /* Usa vw para un tamaño responsivo */
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 425px) {
+    .cardPickleContainer {
+        flex-direction: column; /* Apila la imagen y el texto */
+        align-items: center;
+    }
+
+    .cardPickleContainer > picture {
+        width: 100%; /* Imagen toma todo el ancho en pantallas pequeñas */
+        height: auto;
+    }
+
+    .cardPickleContainer > .textPickleContainer {
+        width: 100%; /* Texto toma todo el ancho */
+        padding: 1rem;
+    }
+
+    .textPickleContainer > p {
+        font-size: 4vw; /* Texto más grande en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .textPickleContainer > p {
+        font-size: 5vw; /* Aumenta el tamaño del texto aún más en pantallas pequeñas */
+    }
+}

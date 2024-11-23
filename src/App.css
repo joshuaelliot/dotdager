@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+ min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #ff004d);
+  box-sizing: border-box;
+  cursor: url('https://twemoji.maxcdn.com/v/latest/72x72/1f60d.png') 16 16, auto;
+}
