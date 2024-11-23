@@ -9,7 +9,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(206, 202, 202);
   box-sizing: border-box;
   cursor: url('../public/img/pepino-cursor.png'),auto;
 }

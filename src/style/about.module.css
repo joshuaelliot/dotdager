@@ -1,7 +1,7 @@
 .aboutContainer{
     width: 100%;
     height: auto;
-    background-color: springgreen;
+    background-color: white;
 
 }
 .aboutContainer > .aboutTitleContainer{
@@ -19,5 +19,5 @@
 
 }
 .aboutContainer > .aboutSectionContainer{
-    background-color: chartreuse;
+    background-color: transparent;
 }
