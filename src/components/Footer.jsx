@@ -50,6 +50,10 @@ export default function Footer() {
     <div className="footer-bottom">
       <p>&copy; 2024 Your Website. All Rights Reserved.</p>
     </div>
+    <div className='footer-bottom footer-imagen'>
+      <img src="/img/eso-es-todo.jpeg" alt="" />
+      <span>Eso es Todo</span>
+    </div>
   </footer>
   
   )

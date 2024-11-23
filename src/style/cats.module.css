@@ -8,6 +8,7 @@
     align-items: center;
     padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
     box-sizing: border-box;
+    
 }
 
 .aboutCatsContainer > .cardCatContainer {
@@ -19,6 +20,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     box-sizing: border-box;
+   
     /* Permite que los elementos se apilen en pantallas pequeñas */
 }
 
