@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className={style.headerContainer}>
       <div className={style.logoContainer}>
-        <img src="../../public/img/pepino.jpg" alt="" />
+        <img src="/img/pepino.jpg" alt="" />
         <span>DotDager</span>
       </div>
         <nav className={style.navContainer}>

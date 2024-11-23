@@ -19,7 +19,7 @@ export default function Front() {
             </div>*/}
         </div>
         <div className={style.frontImageContainer}>
-            <img src="../../public/img/rostro.png" alt="" />
+            <img src="/img/rostro.png" alt="" />
         </div>
     </div>
   )

@@ -3,9 +3,9 @@ import style from '../style/guitar.module.css'
 
 
 
-let imgsGuitar =["../../public/img/trovador.jpeg",
-  "../../public/img/concierto.jpeg",
-  "../../public/img/trovador-guitarra.jpeg"
+let imgsGuitar =["/img/trovador.jpeg",
+  "/img/concierto.jpeg",
+  "/img/trovador-guitarra.jpeg"
 ]
 
 export default function Guitar() {

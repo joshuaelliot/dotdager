@@ -1,9 +1,9 @@
 import { useEffect,useState } from "react";
 import style from '../style/developer.module.css'
 
-let imgsGuitar =["../../public/img/stream1.jpg",
-    "../../public/img/stream2.jpg",
-    "../../public/img/stream3.jpg"
+let imgsGuitar =["/img/stream1.jpg",
+    "/img/stream2.jpg",
+    "/img/stream3.jpg"
   ]
 
 export default function Developer() {

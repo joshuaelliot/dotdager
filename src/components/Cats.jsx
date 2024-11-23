@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import style from '../style/cats.module.css'
 import { useEffect } from 'react'
-let imgsCats = ["../../public/img/gato-piano.png",
-  "../../public/img/gatito-cuello.png",
-  "../../public/img/gatito-alone.png"
+let imgsCats = ["/img/gato-piano.png",
+  "/img/gatito-cuello.png",
+  "/img/gatito-alone.png"
 ]
 
 export default function Cats() {
