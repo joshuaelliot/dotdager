@@ -1,3 +1,6 @@
+.menu{
+    display: none;
+}
 .headerContainer{
     width: 100%;
     height: auto;
@@ -99,13 +102,56 @@ border-bottom: solid 2px rgb(0, 238, 255);
     color: rgb(89, 0, 255);
 }
 @media (max-width: 425px) {
+    .menu{
+        padding: 10px ;
+        font-size: 1.4rem;
+        border: none;
+        display: flex;
+        border-radius: 10px;
+        color: black;
+    }
     .navContainer{
-        display: none;
+        width: 200px;
+        height: auto;
+        padding: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 2%;
+        
+        z-index: 6;
+        transition: all 1s ease-in-out;
+
     }
     .navContainer > .listRedesContainer{
-        display: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
     }
+    
     .navContainer > .listNavContainer{
-        display: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .listRedesContainer > li > a:visited {
+        color: inherit; /* Mantiene el color original */
+      }
+      .listRedesContainer > li >.youtube{
+        color: red;
+    }
+    .listRedesContainer > li > .tiktok{
+        color: black;
+    }
+    .listRedesContainer > li > .instagram{
+        color: rgb(255, 0, 234);
+    }
+    .listRedesContainer > li > .discord{
+        color: rgb(89, 0, 255);
     }
 }

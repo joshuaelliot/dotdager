@@ -2,7 +2,6 @@
     width: 100%;
     height: auto; /* Ajuste automático de la altura */
     background-color: white;
-    
     background-repeat: repeat-x;
     display: flex;
     justify-content: center;
@@ -20,7 +19,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+    /* Permite que los elementos se apilen en pantallas pequeñas */
 }
 
 .cardCatContainer > .imgsContainer{
@@ -91,10 +90,18 @@ picture > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 425px) {
+    .aboutCatsContainer {
+        padding: 0px;
+    }
+    .aboutCatsContainer > .cardCatContainer{
+        width: 100%;
+        flex-wrap: wrap; 
+    }
     .cardCatContainer {
         flex-direction: column; /* Apila la imagen y el texto */
         align-items: center;
@@ -115,8 +122,3 @@ picture > img {
     }
 }
 
-@media (max-width: 480px) {
-    .textCatContainer > p {
-        font-size: 5vw; /* Aumenta el tamaño del texto aún más en pantallas pequeñas */
-    }
-}

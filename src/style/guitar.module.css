@@ -1,9 +1,10 @@
 .aboutGuitarContainer {
     width: 100%;
     height: auto; /* Ajuste automático de la altura */
-    background-color:white;
-
+    background-color: white;
+    background-repeat: repeat-x;
     display: flex;
+
     justify-content: center;
     align-items: center;
     padding: 20px; /* Añadir padding para darle aire en pantallas pequeñas */
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+   
 }
 
 .cardGuitarContainer > .imgsContainer{
@@ -27,10 +28,6 @@
     position: relative;
     background-color: transparent;
 }
-.imgLarge, .imgMedium, .imgSmall {
-    transition: opacity 1s ease-in-out;
-}
-
 .imgsContainer > .imgLarge{
     width: 80%;
     height: 80%;
@@ -38,6 +35,7 @@
     top: 0px;
     right: 0px;
     z-index: 2;
+    object-fit: cover;
 }
 .imgsContainer > .imgMedium{
     width: 50%;
@@ -57,7 +55,6 @@
     z-index: 3;
     filter: grayscale(100%);
 }
-
 .cardGuitarContainer > picture {
     width: 40%;
     height: auto; /* Ajuste automático */
@@ -82,21 +79,31 @@ picture > img {
 
 .textGuitarContainer > p {
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 10px;
     color: rgb(10, 10, 10);
-    background-color: rgb(252, 252, 247);
-    border:solid 4px black;
+    background-color: transparent;
+    border: solid 4px black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.8vw; /* Usa vw para un tamaño responsivo */
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 425px) {
+    .aboutGuitarContainer {
+        padding: 0px;
+    }
+    .aboutGuitarContainer > .cardGuitarContainer{
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap; 
+    }
     .cardGuitarContainer {
         flex-direction: column; /* Apila la imagen y el texto */
         align-items: center;
@@ -109,7 +116,12 @@ picture > img {
 
     .cardGuitarContainer > .textGuitarContainer {
         width: 100%; /* Texto toma todo el ancho */
-        padding: 1rem;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .textGuitarContainer >p{
+        box-sizing: border-box;
     }
 
     .textGuitarContainer > p {

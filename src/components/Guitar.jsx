@@ -39,10 +39,13 @@ export default function Guitar() {
       </div>
 
       <div className={style.textGuitarContainer}>
-        {
-        <p>El rock es mi esencia, no solo lo escucho, lo vivo. La guitarra me permite crear música que vibra en lo más profundo. Ser parte de una banda me conecta con otros a través de cada nota. Y cuando ensayo, mi compañero fiel, mi gato, siempre está ahí, como si entendiera cada riff. Juntos, rockeamos la vida.</p>
-        }
-        
+        <p>El rock es mi esencia, no solo lo escucho,
+           lo vivo. La guitarra me permite crear música 
+           que vibra en lo más profundo. Ser parte de una 
+           banda me conecta con otros a través de cada nota.
+            Y cuando ensayo, mi compañero fiel, mi gato,
+             siempre está ahí, como si entendiera cada riff. 
+             Juntos, rockeamos la vida.</p>
       </div>
     </div>
   </div>

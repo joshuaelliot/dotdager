@@ -2,7 +2,6 @@
     width: 100%;
     height: auto; /* Ajuste automático de la altura */
     background-color: white;
-    
     background-repeat: repeat-x;
     display: flex;
     justify-content: center;
@@ -61,7 +60,11 @@ picture > img {
 
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 425px) {
-    .cardPickleContainer {
+    .aboutPickleContainer{
+        padding: 0px;
+    }
+    .aboutPickleContainer > .cardPickleContainer {
+        width: 100%;
         flex-direction: column; /* Apila la imagen y el texto */
         align-items: center;
     }
@@ -69,6 +72,8 @@ picture > img {
     .cardPickleContainer > picture {
         width: 100%; /* Imagen toma todo el ancho en pantallas pequeñas */
         height: auto;
+        box-sizing: border-box;
+        padding: 0 10px;
     }
 
     .cardPickleContainer > .textPickleContainer {

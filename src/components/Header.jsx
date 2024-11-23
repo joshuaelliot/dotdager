@@ -1,13 +1,22 @@
 
+import { useState } from 'react'
 import style from '../style/header.module.css'
 export default function Header() {
+  const [position,setPosition] = useState(false)
   return (
     <header className={style.headerContainer}>
       <div className={style.logoContainer}>
         <img src="/img/pepino.jpg" alt="" />
         <span>DotDager</span>
       </div>
-        <nav className={style.navContainer}>
+      <button className={style.menu}
+      onClick={()=>{
+        setPosition(!position);
+      }}
+      >
+        <i className="fa-solid fa-bars"></i>
+        </button>
+        <nav className={style.navContainer} style={{right:position?'0px':'-240px'}}>
             <ul className={style.listNavContainer}>
                 <li>Inicio</li>
                 <li><a href="#sobre-mi">Sobre Mi</a></li>

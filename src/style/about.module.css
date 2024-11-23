@@ -7,7 +7,7 @@
 .aboutContainer > .aboutTitleContainer{
 
     background-color: white;
-    background-image: url('../../public/img/gato-about.jpeg');
+    background-image: url('/img/gato-about.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
